@@ -1,0 +1,121 @@
+:root {
+    --app-primary: #4f46e5;
+    --app-primary-dark: #3730a3;
+    --app-bg: #f5f6fb;
+}
+
+body {
+    background: var(--app-bg);
+    color: #1f2430;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.app-navbar {
+    background: linear-gradient(120deg, var(--app-primary-dark), var(--app-primary));
+    box-shadow: 0 2px 12px rgba(31, 36, 48, .15);
+}
+
+.app-navbar .nav-link {
+    color: rgba(255, 255, 255, .82);
+    border-radius: .5rem;
+    padding: .4rem .75rem;
+}
+
+.app-navbar .nav-link:hover,
+.app-navbar .nav-link.active {
+    color: #fff;
+    background: rgba(255, 255, 255, .14);
+}
+
+.hero {
+    background: linear-gradient(120deg, var(--app-primary-dark), var(--app-primary));
+    color: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 12px 28px rgba(79, 70, 229, .25);
+}
+
+.card {
+    border-radius: .9rem;
+}
+
+.card-header {
+    border-top-left-radius: .9rem !important;
+    border-top-right-radius: .9rem !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .06);
+}
+
+.btn {
+    border-radius: .55rem;
+}
+
+.btn-primary {
+    background-color: var(--app-primary);
+    border-color: var(--app-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--app-primary-dark);
+    border-color: var(--app-primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--app-primary);
+    border-color: var(--app-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--app-primary);
+    border-color: var(--app-primary);
+}
+
+.message-card {
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.message-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .6rem 1.4rem rgba(31, 36, 48, .1) !important;
+}
+
+.message-text {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.destaque-card {
+    border-top: 4px solid var(--app-primary);
+}
+
+.result-option {
+    border: 1px solid #dee2e6;
+    border-radius: .55rem;
+    padding: .6rem .75rem .6rem 2.4rem;
+    background: #fff;
+    transition: border-color .15s ease, background .15s ease;
+}
+
+.result-option:has(input:checked) {
+    border-color: var(--app-primary);
+    background: rgba(79, 70, 229, .06);
+}
+
+.result-option .form-check-label {
+    cursor: pointer;
+}
+
+.app-footer {
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, .06);
+    margin-top: 2rem;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
