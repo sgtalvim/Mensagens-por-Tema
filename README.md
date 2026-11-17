@@ -25,7 +25,7 @@ já com as tabelas `temas` e `mensagens`.
 ## Structure
 
 ```
-config.php            PDO/SQLite connection, migration, and utilities (CSRF, flash messages, escaping)
+config.php            PDO/SQLite connection, migration, and utilities (CSRF, flash, escaping)
 index.php             Home page with counters and latest messages
 mensagens.php         List of messages (with filtering by topic)
 mensagem-form.php     Message creation and editing (text + topic)
